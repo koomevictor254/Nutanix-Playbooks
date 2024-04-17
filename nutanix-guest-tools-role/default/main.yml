@@ -1,0 +1,4 @@
+nutanix_prism_element_url: https://example.domain.com:9440
+vm_name: "{{ inventory_hostname }}"
+nutanix_prism_user:
+nutanix_prism_password:

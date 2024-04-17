@@ -1,0 +1,12 @@
+- name: Enable and install NGT
+  hosts: myserver
+  vars_prompt:
+    - name: "nutanix_prism_user"
+      prompt: "Enter Nutanix username (ex: user@domain.local)"
+      private: no
+    - name: "nutanix_prism_password"
+      prompt: "Enter password"
+      private: yes
+  roles:
+    - nutanix-guest-tools
+
